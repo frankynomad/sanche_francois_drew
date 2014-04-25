@@ -1,0 +1,161 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Beard Swavvy Programmer Beard Cream</title>
+		<link rel="stylesheet" href="styles/normalize.css" type="text/css">
+		<link rel="stylesheet" href="styles/main.css" type="text/css">
+		<link rel="stylesheet" href="fonts/bpdots/stylesheet.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="fonts/troika_regular_macroman/stylesheet.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="styles/font-awesome-4.0.3/css/font-awesome.min.css">
+	</head>
+	<body>
+		<nav>
+			<img id="logo" src="assets/images/beardsavvylogo.png"/>
+			<ul>
+				<a href="#why"><li>why?</li></a>
+				<a href="#what"><li>what?</li></a>
+				<a href="#how"><li>how?</li></a>
+			</ul>
+		</nav>
+		
+		<div class="container">
+			<section id="why">
+				<img id="lousybeard" src="assets/images/dudesad.png"/>
+				<h1>Tired of your code being second best?</h1>
+				<h2>Want to start coding like a REAL man? </h2>
+				<div id="slogan">
+					<p>Let Beard Swavvy help you take it to the next level.</p>
+					<p>Using Beard Swavvy's new patented micro organic nano bug technology, you're coding skillz can go from mundane, to mad with a few squirts of the tube.</p>
+				</div>
+			</section>
+
+			<section id="what">
+				<div id="animation"><img src="assets/images/pasteanimate.gif"/></div>
+				<h1>What's It Do?</h1>
+				<p>Beard Swavvy has many benefits when applied properly</p>
+				<div id="skillswrap">
+					<ul id="skills">
+						<li>
+							<img src="assets/images/html5logo.png">
+							<p>Having trouble keeping track of opening and closing divs?  Beard Swavvy will prevent them all from ever challenging your vision, making your designs instantly look the way you think they should.</p>
+						</li>
+						<li>
+							<img src="assets/images/javascriptlogo.png">
+							<p>Not good at writing dynamic scripts?  Why bother when Beard Swavvy has you covered.  When you use this amazing cream, your javascript will write itself.<br>Promise.</p>
+						</li>
+						<li>
+							<img src="assets/images/css3logo.png">
+							<p>Transitions not looking as cool as you'd hoped?   Animations slow or laggy?  Floats not behaving the way you expect them to?  Forget about it. BS will litterally come up with the code for you.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		
+			<section id="how">
+				<h1>How's it work?</h1>
+				<p>Just follow these 3 simple steps</p>
+				<div id="howto">
+					<div id="wholeViewport">
+						<div class="viewport">
+		    				<a href="#how">
+		        				<span class="dark-background">LATHER <em>rub Beard Swavvy's patented micro organic squished nano bugs into your face</em></span>
+		        				<img src="assets/images/dudesadfoam.png" alt="Lather with squished nano bugs" />
+		    				</a>
+						</div>
+						<div class="viewport">
+		    				<a href="#how">
+		        				<span class="dark-background">REPEAT<em>Repeat process everyday for 6 or 7 months or until you give up because you're not cool enough</em></span>
+		        				<img src="assets/images/dudescruffy.png" alt="Repeat for 6 to 7 months" />
+		    				</a>
+						</div>
+						<div class="viewport">
+		    				<a href="#how">
+		        				<span class="dark-background">BE AWESOME<em>Reap the bounty of being the Chuck Norris of back-end warriors with your new super duper hyper programmer face armor</em></span>
+		        				<img src="assets/images/dudebeard.png" alt="Power Level 9000!" />
+		    				</a>
+						</div>
+						<ul id="hideDescriptions">
+							<li>
+								<img class="hidden" src="assets/images/dudesadfoam.png"/>
+								<button id="butt1">Click for Step 1</button>
+								<div id="description1">LATHER: Rub Beard Swavvy's patented micro organic squished nano bugs into your face</div>
+							</li>
+							<li>
+					    		<img class="hidden" src="assets/images/dudescruffy.png"/>
+					    		<button id="butt2">Click for Step 2</button>
+								<div id="description2">REPEAT: Repeat process everyday for 6 or 7 months or until you give up because you're not cool enough</div>
+							</li>
+							<li>
+					    		<img class="hidden" src="assets/images/dudebeard.png"/>
+					    		<button id="butt3">Click for Step 3</button>
+								<div id="description3">BE AWESOME: Reap the bounty of being the Chuck Norris of back-end warriors with your new super duper hyper programmer face armor</div>
+					    	</li>
+			    		</ul>
+					</div>
+					
+				</div>
+			</section>
+		</div>
+		
+
+
+		<footer>
+			<ul>
+				<a href="www.github.io"><li><i class="fa fa-github-alt fa-4x"></i></li></a>
+				<a href="www.twitter.com"><li><i class="fa fa-twitter fa-4x"></i></li></a>
+				<a href="www.facebook.com"><li><i class="fa fa-facebook fa-4x"></i></li></a>
+				<a href="www.dribbble.com"><li><i class="fa fa-dribbble fa-4x"></i></li></a>	
+			</ul>
+			<p id="copyright">copyright Beard Swavvy 2014</p>
+		</footer>
+	</body>
+
+	
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="http://unslider.com/unslider.min.js"></script>
+	<script src="js/jqueryshow.js"></script>  <!-- must be at mobile size to see this-->	
+	<script src="js/jquery.sticky.js"></script> <!-- Cant seem to get this working reliably...     Could you give me some notes on this, Drew???  Thanks man! -->
+
+ 
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.viewport').mouseenter(function(e) {
+		        $(this).children('a').children('img').animate({ height: '299', left: '0', top: '0', width: '450'}, 100);
+		        $(this).children('a').children('span').fadeIn(200);
+		    }).mouseleave(function(e) {
+		        $(this).children('a').children('img').animate({ height: '332', left: '-20', top: '-20', width: '500'}, 100);
+		        $(this).children('a').children('span').fadeOut(200);
+		    });
+		});
+	</script>
+	
+
+	<script>
+		$( "#butt1" ).click(function() {
+  		$( "#description1" ).show( "slow" );
+		});
+	</script>
+	<script>
+		$( "#butt2" ).click(function() {
+  		$( "#description2" ).show( "slow" );
+		});
+	</script>
+	<script>
+		$( "#butt3" ).click(function() {
+  		$( "#description3" ).show( "slow" );
+		});
+	</script>
+
+	<script>
+  		$(document).ready(function(){
+    	$("nav").sticky({topSpacing:0});
+  		});
+	</script>
+
+</html>
+
+
+
